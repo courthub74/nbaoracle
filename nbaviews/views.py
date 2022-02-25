@@ -485,7 +485,7 @@ def min(request):
     import json 
 
     # T-WOLVES General Info 134886
-    minreq = requests.get("https://www.thesportsdb.com/api/v1/json/4013017/searchteams.php?t=Memphis_Grizzlies")
+    minreq = requests.get("https://www.thesportsdb.com/api/v1/json/4013017/searchteams.php?t=Minnesota_Timberwolves")
     min_info = json.loads(minreq.content)
 
     # T-WOLVES Last Game Info
