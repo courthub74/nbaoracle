@@ -3,7 +3,7 @@ import os
 
 import django_heroku
 
-# from decouple import config
+from decouple import config
 
 import dj_database_url
 
@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-xvulp-ffdgbsr_(h#mrl8r_bm$9)k%ub_(ytj0a&o=^c&6(64i'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
